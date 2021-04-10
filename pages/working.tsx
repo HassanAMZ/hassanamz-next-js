@@ -11,7 +11,7 @@ export default function Working() {
   return (
     <>
       <Head>
-        <title>HassanAMZ</title>
+        <title>Under Construction || HassanAMZ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
