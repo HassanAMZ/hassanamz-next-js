@@ -3,9 +3,8 @@ import { Flex, Box } from "@chakra-ui/react";
 import SocialMediaConnect from "../components/SocialMediaConnect";
 import Youtube from "../components/Youtube";
 import AnimePoster from "../components/Anime Posters/AnimePoster";
-
-import Nav from "../components/NavBar/Nav";
 import Layout from "../components/Layout/Layout";
+
 export default function Working() {
   console.log(process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID);
   return (
