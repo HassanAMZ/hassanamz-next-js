@@ -1,5 +1,5 @@
 export default async (req, res) => {
-  var key = process.env.local.YOUTUBE_KEY;
+  var key = process.env.YOUTUBE_KEY;
   const response = await fetch(
     "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCfB_dBMG9TK2RlPsJdSXYSw&key=" +
       key
