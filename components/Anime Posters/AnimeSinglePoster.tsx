@@ -10,7 +10,7 @@ const AnimeSinglePoster = ({
   date,
 }) => {
   const boxProperty = {
-    maxWidth: [130, 250, 350],
+    maxWidth: [250, 500],
     padding: [3, 5, 7],
   };
   return (
