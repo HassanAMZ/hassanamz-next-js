@@ -1,0 +1,9 @@
+:root {
+  --main-bg-color: black;
+  --main-text-color: white;
+  --accent-text-color: #e9204f;
+}
+::selection {
+  color: var(--main-bg-color);
+  background: var(--main-text-color);
+}
