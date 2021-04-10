@@ -1,6 +1,7 @@
 :root {
   --main-bg-color: black;
   --main-text-color: white;
+  --secondary-text-color: grey;
   --accent-text-color: #e9204f;
   --card_width: 250px;
   --row_increment: 10px;
@@ -8,6 +9,8 @@
   --card_small: 26;
   --card_med: 33;
   --card_large: 45;
+  --anime-poster-height: 480px;
+  --anime-poster-width: 180px;
 }
 ::selection {
   color: var(--main-bg-color);
