@@ -1,8 +1,11 @@
 import Head from "next/head";
-import { Flex, Heading, Box } from "@chakra-ui/react";
+import { Flex, Box } from "@chakra-ui/react";
 import SocialMediaConnect from "../components/SocialMediaConnect";
 import Youtube from "../components/Youtube";
+import AnimePoster from "../components/Anime Posters/AnimePoster";
 
+import Nav from "../components/NavBar/Nav";
+import Layout from "../components/Layout/Layout";
 export default function Working() {
   console.log(process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID);
   return (
@@ -11,20 +14,21 @@ export default function Working() {
         <title>HassanAMZ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box
-        bg="var(--main-bg-color)"
-        color="var(--main-text-color)"
-        alignItems="center"
-        justifyContent="center"
-        h="100vh"
-      >
-        <Flex flexDirection="column" h="70vh">
-          <SocialMediaConnect />
-        </Flex>
-        <Box>
-          <Youtube />
+      <Layout>
+        <Box alignItems="center" justifyContent="center">
+          <Flex
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <SocialMediaConnect />
+          </Flex>
+          <Box>
+            <Youtube />
+          </Box>
+          <AnimePoster />
         </Box>
-      </Box>
+      </Layout>
     </>
   );
 }
