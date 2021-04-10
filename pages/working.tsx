@@ -18,7 +18,7 @@ export default function Working() {
         justifyContent="center"
         h="100vh"
       >
-        <Flex flexDirection="column">
+        <Flex flexDirection="column" h="70vh">
           <SocialMediaConnect />
         </Flex>
         <Box>
