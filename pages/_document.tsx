@@ -1,8 +1,14 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { GTM_ID } from "../lib/gtm";
-import { ColorModeScript } from "@chakra-ui/react";
+import { ColorModeScript, extendTheme } from "@chakra-ui/react";
 import theme from "../components/Theme/Theme";
 export default class MyDocument extends Document {
+  theme = extendTheme({
+    config: {
+      useSystemColorMode: true,
+      initialColorMode: "dark",
+    },
+  });
   render() {
     return (
       <Html>
