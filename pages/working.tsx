@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Title from "../components/Layout/TItle";
+import Title from "../components/Layout/Title";
 import { Flex, Box } from "@chakra-ui/react";
 import SocialMediaConnect from "../components/SocialMediaConnect";
 import Youtube from "../components/Youtube";

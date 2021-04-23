@@ -12,9 +12,7 @@ export default function Nav() {
         >
           <Link href="/">HassanAMZ</Link>
 
-          <Button onClick={toggleColorMode}>
-            {colorMode === "Dark" ? "Light" : "Dark"}
-          </Button>
+          <Button onClick={toggleColorMode}>C</Button>
         </Flex>
       </nav>
     </>
