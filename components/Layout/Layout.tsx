@@ -1,10 +1,12 @@
-import { Flex, Link } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/layout";
 import Nav from "../NavBar/Nav";
 export default function Layout({ children }) {
   return (
     <>
-      <Nav />
-      {children}
+      <Container>
+        <Nav />
+        {children}
+      </Container>
     </>
   );
 }

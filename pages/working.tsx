@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Title from "../components/Layout/TItle";
 import { Flex, Box } from "@chakra-ui/react";
 import SocialMediaConnect from "../components/SocialMediaConnect";
 import Youtube from "../components/Youtube";
@@ -14,7 +15,8 @@ export default function Working() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Box alignItems="center" justifyContent="center">
+        <Title text="This is the main Title" headingType="h2" />
+        <Box alignItems="center" justifyContent="center" h="80vh">
           <Flex
             flexDirection="column"
             alignItems="center"
@@ -22,11 +24,9 @@ export default function Working() {
           >
             <SocialMediaConnect />
           </Flex>
-          <Box>
-            <Youtube />
-          </Box>
-          <AnimePoster />
+          <Box>{/* <Youtube /> */}</Box>
         </Box>
+        <AnimePoster />
       </Layout>
     </>
   );

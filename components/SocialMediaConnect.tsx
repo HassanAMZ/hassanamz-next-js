@@ -1,6 +1,5 @@
 import { Center, Grid, GridItem, Heading, Link } from "@chakra-ui/react";
 import ConnectLinks from "./Social Media Links/ConnectLinks";
-import Image from "next/image";
 
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 export default function SocialMediaConnect() {

@@ -6,8 +6,8 @@ const AnimePoster = () => {
     <>
       <GridItem>
         <Grid
-          gap={1}
-          templateColumns="repeat(auto-fill,minmax(150px,1fr))"
+          gap={2}
+          templateColumns="repeat(auto-fill,minmax(190px,1fr))"
           autoRows="minmax(150px, auto)"
           gridAutoFlow="dense"
         >

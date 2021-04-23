@@ -1,22 +1,22 @@
-import { Button, Flex, useColorMode } from "@chakra-ui/react";
+import { Button, Flex, useColorMode, Link } from "@chakra-ui/react";
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <>
-      <header>
+      <nav>
         <Flex
-          flexDirection="column"
+          flexDirection="row"
           alignItems="center"
-          justifyContent="center"
+          justifyContent="space-between"
         >
-          <nav>
-            <Button onClick={toggleColorMode}>
-              Toggle {colorMode === "light" ? "Dark" : "Light"}
-            </Button>
-          </nav>
+          <Link href="/">HassanAMZ</Link>
+
+          <Button onClick={toggleColorMode}>
+            {colorMode === "Dark" ? "Light" : "Dark"}
+          </Button>
         </Flex>
-      </header>
+      </nav>
     </>
   );
 }

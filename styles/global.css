@@ -1,18 +1,15 @@
 :root {
-  --main-bg-color: black;
-  --main-text-color: white;
-  --secondary-text-color: grey;
-  --accent-text-color: #e9204f;
-  --card_width: 250px;
-  --row_increment: 10px;
-  --card_border_radius: 16px;
-  --card_small: 26;
-  --card_med: 33;
-  --card_large: 45;
-  --anime-poster-height: 480px;
-  --anime-poster-width: 180px;
+  --red: red;
+  --white: #fff;
+  --black: #000;
+  --gray: rgb(179, 175, 175);
+
+  --main-bg-color: var(--black);
+  --main-text-color: var(--white);
+  --secondary-text-color: var(--gray);
+  --accent-text-color: var(--red);
 }
 ::selection {
-  color: var(--main-bg-color);
-  background: var(--main-text-color);
+  color: var(--main-text-color);
+  background: var(--accent-text-color);
 }
