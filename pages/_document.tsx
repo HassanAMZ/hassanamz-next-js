@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
   theme = extendTheme({
     config: {
       useSystemColorMode: true,
-      initialColorMode: "dark",
+      initialColorMode: "light",
     },
   });
   render() {
