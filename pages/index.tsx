@@ -1,19 +1,13 @@
-import { Flex, Link } from "@chakra-ui/react";
-import Layout from "../components/Layout/Layout";
+import { Flex } from "@chakra-ui/react";
+import Headline from "../components/Typography/Headline";
+import PortfolioIntroductionSummary from "../components/Portfolio Components/PortfolioIntroductionSummary";
+import PortfolioIntroductionDetailed from "../components/Portfolio Components/PortfolioIntroductionDetailed";
+
 export default function Home() {
   return (
-    <Layout>
-      <Flex
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        h="100vh"
-      >
-        <h1>Website Under Construciton</h1>
-        <div>
-          <Link href="/working">For Test Site</Link>
-        </div>
-      </Flex>
-    </Layout>
+    <Flex flexDirection="column">
+      <Headline type="h2">Hey, I'm Shahzada Ali Hassan</Headline>
+      <PortfolioIntroductionSummary />
+    </Flex>
   );
 }

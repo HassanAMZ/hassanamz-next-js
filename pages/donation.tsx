@@ -17,7 +17,6 @@ import {
   Container,
 } from "@chakra-ui/react";
 import { Formik, Form, Field } from "formik";
-import Layout from "../components/Layout/Layout";
 import Head from "next/head";
 export default function Donation() {
   return (
@@ -26,7 +25,7 @@ export default function Donation() {
         <title>Donation || HassanAMZ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
+      <>
         <Container>
           <Formik
             initialValues={{ name: "John Doe" }}
@@ -84,7 +83,7 @@ export default function Donation() {
             </Form>
           </Formik>
         </Container>
-      </Layout>
+      </>
     </>
   );
 }

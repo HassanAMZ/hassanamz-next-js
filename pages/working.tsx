@@ -1,11 +1,9 @@
 import Head from "next/head";
-import Title from "../components/Layout/Title";
+import Title from "../components/Typography/Title";
 import { Flex, Box } from "@chakra-ui/react";
 import SocialMediaConnect from "../components/SocialMediaConnect";
+import { AnimePoster, Headline } from "../components/Index";
 import Youtube from "../components/Youtube";
-import AnimePoster from "../components/Anime Posters/AnimePoster";
-import Layout from "../components/Layout/Layout";
-
 export default function Working() {
   console.log(process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID);
   return (
@@ -14,8 +12,8 @@ export default function Working() {
         <title>Under Construction || HassanAMZ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
-        <Title text="This is the main Title" headingType="h2" />
+      <>
+        <Headline type="h2">Title heading</Headline>
         <Box alignItems="center" justifyContent="center" h="80vh">
           <Flex
             flexDirection="column"
@@ -24,10 +22,12 @@ export default function Working() {
           >
             <SocialMediaConnect />
           </Flex>
-          <Box>{/* <Youtube /> */}</Box>
+          <Box>
+            <Youtube />
+          </Box>
         </Box>
         <AnimePoster />
-      </Layout>
+      </>
     </>
   );
 }

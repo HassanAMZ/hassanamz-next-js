@@ -3,12 +3,6 @@ import { GTM_ID } from "../lib/gtm";
 import { ColorModeScript, extendTheme } from "@chakra-ui/react";
 import theme from "../components/Theme/Theme";
 export default class MyDocument extends Document {
-  theme = extendTheme({
-    config: {
-      useSystemColorMode: true,
-      initialColorMode: "light",
-    },
-  });
   render() {
     return (
       <Html>
@@ -36,6 +30,7 @@ export default class MyDocument extends Document {
             />
           </noscript>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+
           <Main />
           <NextScript />
         </body>
