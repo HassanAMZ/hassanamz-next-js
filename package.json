@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "generate:sitemap": "node ./scripts/sitemapGenerator.js"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.3.2",
@@ -13,7 +14,10 @@
     "@emotion/styled": "^11.1.5",
     "formik": "^2.2.6",
     "framer-motion": "^3.3.0",
+    "fs": "0.0.1-security",
+    "globby": "^11.0.3",
     "next": "10.0.5",
+    "prettier": "^2.2.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-icons": "^4.2.0",

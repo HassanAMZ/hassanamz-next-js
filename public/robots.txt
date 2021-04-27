@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://hassanamz.com/sitemap.xml
