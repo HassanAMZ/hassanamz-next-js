@@ -1,13 +1,10 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { GTM_ID } from "../lib/gtm";
-import { ColorModeScript, extendTheme } from "@chakra-ui/react";
-import theme from "../components/Theme/Theme";
 export default class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
-          {/* Google Tag Manager - Global base code */}
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -19,6 +16,11 @@ export default class MyDocument extends Document {
               `,
             }}
           />
+          <title>Hassan AMZ</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
         </Head>
         <body>
           <noscript>
@@ -29,7 +31,6 @@ export default class MyDocument extends Document {
               style={{ display: "none", visibility: "hidden" }}
             />
           </noscript>
-          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
 
           <Main />
           <NextScript />

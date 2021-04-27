@@ -1,6 +1,5 @@
-import { Flex, Grid, GridItem, Heading, Link, Text } from "@chakra-ui/react";
-import Paragrapgh from "../Typography/Paragrapgh";
-import PortfolioIntroductionSummary from "./PortfolioIntroductionSummary";
+import { Paragrapgh } from "../Index";
+
 export default function PortfolioIntroductionDetailed() {
   return (
     <>

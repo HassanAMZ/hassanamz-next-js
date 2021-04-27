@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
       <GoogleTagManager>
         <ChakraProvider>
           <Container maxW="container.lg">
-            <Flex flexDirection="column" mt={4} ml={[2, 4]} mr={[2, 4]}>
+            <Flex flexDirection="column" mt={2} ml={[2, 4]} mr={[2, 4]}>
               <Nav />
               <Flex flexDirection="column" ml={[2, 4]} mr={[2, 4]}>
                 <Component {...pageProps} />

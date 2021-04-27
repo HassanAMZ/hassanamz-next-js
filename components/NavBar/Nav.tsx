@@ -2,8 +2,6 @@ import { Button, Flex, useColorMode, Link } from "@chakra-ui/react";
 import Paragrapgh from "../Typography/Paragrapgh";
 import Title from "../Typography/Title";
 export default function Nav() {
-  const { toggleColorMode } = useColorMode();
-
   return (
     <>
       <nav>
@@ -25,11 +23,7 @@ export default function Nav() {
             <Paragrapgh type="p">
               <Link href="/portfolio">About</Link>
             </Paragrapgh>
-            {/* <Paragrapgh type="p">
-              <Link href="/wordking">Test</Link>
-            </Paragrapgh> */}
           </Flex>
-          {/* <Button onClick={toggleColorMode}>C</Button> */}
         </Flex>
       </nav>
     </>
