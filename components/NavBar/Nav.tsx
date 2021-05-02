@@ -1,7 +1,6 @@
 import { Text, Flex, Box, Link } from "@chakra-ui/react";
 import style from "../../styles/nav.module.css";
-import { MdKeyboardArrowRight } from "react-icons/md";
-
+import { ProjectRequestButton } from "../Index";
 export default function Nav() {
   return (
     <>
@@ -42,19 +41,8 @@ export default function Nav() {
               Testing
             </Link>
           </Flex>
-          <Link
-            className={style.projectRequest}
-            href="/"
-            display="flex"
-            flexDirection="row"
-            alignItems="center"
-            justifyContent="space-between"
-            color="#1984ea"
-            textDecoration="none"
-          >
-            <> Project Request</>
-            <MdKeyboardArrowRight />
-          </Link>
+
+          <ProjectRequestButton variant="solid" size="sm" />
         </Flex>
       </Box>
     </>

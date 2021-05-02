@@ -1,4 +1,5 @@
-import { Flex, Grid, Box, Heading, Text } from "@chakra-ui/react";
+import { ProjectRequestButton } from "@/components/Index";
+import { Flex, Grid, Button, Heading, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Shahzada Ali Hassan - React Js & GTM Expert</title>
       </Head>
-      <Grid placeContent="center" h={"70vh"}>
+      <Grid placeContent="center" h={"70vh"} as="main">
         <Grid
           templateColumns={["1fr", "200px 2fr", "275px 2fr"]}
           justifyContent="center"
@@ -26,17 +27,12 @@ export default function Home() {
             flexDirection={["column"]}
             alignItems={["center", "flex-start"]}
             justifyContent="space-between"
-            maxW="container.lg"
-            margin="auto"
-            pr={2}
-            pl={2}
-            as="main"
-            ml={2}
+            m={["0", "4"]}
           >
             <Text
               textAlign={["center", "left"]}
               as="h2"
-              pt={[4]}
+              mt={[4]}
               fontWeight="bold"
               fontSize={fontSize}
             >
@@ -45,7 +41,7 @@ export default function Home() {
             <Heading
               textAlign={["center", "left"]}
               as="h1"
-              pt={2}
+              mt={2}
               fontSize={["3xl", "4xl", "6xl"]}
             >
               Next JS & GTM Expert
@@ -53,13 +49,16 @@ export default function Home() {
             <Text
               textAlign={["center", "left"]}
               as="p"
-              pt={2}
+              mt={2}
+              mb={4}
               fontSize={fontSize}
               maxWidth={["lg"]}
             >
               Web Design, Development & Analytics for companies that want to
               grow their business with a great website.
             </Text>
+
+            <ProjectRequestButton variant="outline" size="md" />
           </Flex>
         </Grid>
       </Grid>

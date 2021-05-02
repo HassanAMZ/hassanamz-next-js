@@ -4,6 +4,7 @@
   }
 }
 
-.linkStyles:hover {
+.linkStyles:hover,
+.projectRequest:hover {
   text-decoration: none !important;
 }
