@@ -1,13 +1,14 @@
 :root {
+  --green: green;
   --red: red;
   --white: #fff;
   --black: #000;
   --gray: rgb(179, 175, 175);
 
-  --main-bg-color: var(--black);
-  --main-text-color: var(--white);
+  --main-bg-color: var(--white);
+  --main-text-color: var(--black);
   --secondary-text-color: var(--gray);
-  --accent-text-color: var(--red);
+  --accent-text-color: var(--green);
 }
 ::selection {
   color: var(--main-text-color);

@@ -27,7 +27,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "lib/gtm.js", "lib/gtm.js", "components/Theme/Theme.js", "scripts/sitemapGenerator.js"  ],
+, "lib/gtm.js", "lib/gtm.js", "components/Chakra Theme/Theme.js", "scripts/sitemapGenerator.js"  ],
   "exclude": [
     "node_modules"
   ]

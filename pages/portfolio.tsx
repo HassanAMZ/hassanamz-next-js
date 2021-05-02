@@ -1,4 +1,4 @@
-import { Headline } from "../components/Index";
+import { Heading } from "@chakra-ui/react";
 import {
   PortfolioIntroductionDetailed,
   PortfolioIntroductionSummary,
@@ -6,7 +6,7 @@ import {
 export default function Portfolio() {
   return (
     <>
-      <Headline type="h3">About</Headline>
+      <Heading type="h3">About</Heading>
       <PortfolioIntroductionSummary />
       <PortfolioIntroductionDetailed />
     </>

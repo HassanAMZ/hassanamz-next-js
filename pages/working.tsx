@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Title from "../components/Typography/Title";
-import { Flex, Box } from "@chakra-ui/react";
+import { Flex, Box, Heading } from "@chakra-ui/react";
 import SocialMediaConnect from "../components/SocialMediaConnect";
-import { AnimePoster, Headline } from "../components/Index";
+import { AnimePoster } from "../components/Index";
 import Youtube from "../components/Youtube";
 export default function Working() {
   console.log(process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID);
@@ -13,7 +12,7 @@ export default function Working() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <Headline type="h2">Title heading</Headline>
+        <Heading type="h2">Title heading</Heading>
         <Box alignItems="center" justifyContent="center" h="80vh">
           <Flex
             flexDirection="column"

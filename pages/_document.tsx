@@ -16,11 +16,6 @@ export default class MyDocument extends Document {
               `,
             }}
           />
-          <title>Hassan AMZ</title>
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
         </Head>
         <body>
           <noscript>

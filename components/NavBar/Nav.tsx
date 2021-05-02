@@ -1,31 +1,52 @@
-import { Button, Flex, useColorMode, Link } from "@chakra-ui/react";
-import Paragrapgh from "../Typography/Paragrapgh";
-import Title from "../Typography/Title";
+import { Text, Flex, Box, Link } from "@chakra-ui/react";
+import style from "../../styles/nav.module.css";
+import { MdKeyboardArrowRight } from "react-icons/md";
+
 export default function Nav() {
   return (
     <>
-      <nav>
+      <Box as="nav" className={style.transparentNav}>
         <Flex
           flexDirection="row"
           alignItems="center"
           justifyContent="space-between"
-          pb={[4]}
-          pt={[4]}
+          pb={[2, 4]}
+          pt={[2, 4]}
+          pr={2}
+          pl={2}
+          maxW="container.lg"
+          margin="auto"
         >
-          <Title type="h3">
-            <Link href="/">HassanAMZ</Link>
-          </Title>
+          <Link className={style.linkStyles} href="/" fontWeight="bold">
+            Shahzada A. Hassan
+          </Link>
           <Flex
             flexDirection="row"
             alignItems="space-between"
             justifyContent="space-between"
+            className={style.hiddenOnMobile}
           >
-            <Paragrapgh type="p">
-              <Link href="/portfolio">About</Link>
-            </Paragrapgh>
+            <Link className={style.linkStyles} mr={4} href="portfolio">
+              About
+            </Link>
+
+            <Link className={style.linkStyles} href="working">
+              Testing
+            </Link>
           </Flex>
+          <Link
+            className={style.projectRequest}
+            href="/"
+            display="flex"
+            flexDirection="row"
+            alignItems="center"
+            justifyContent="space-between"
+          >
+            <> Project Request</>
+            <MdKeyboardArrowRight />
+          </Link>
         </Flex>
-      </nav>
+      </Box>
     </>
   );
 }

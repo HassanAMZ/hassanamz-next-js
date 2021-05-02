@@ -2,14 +2,13 @@ import YouTubeCardSubs from "../components/Youtube/YouTubeCardSubs";
 import YouTubeCardVids from "../components/Youtube/YouTubeCardVids";
 import YouTubeCardViews from "../components/Youtube/YouTubeCardViews";
 import { Grid, Center, Heading } from "@chakra-ui/react";
-import Headline from "./Typography/Headline";
 const Youtube = () => {
   const youtubeLink =
     "https://www.youtube.com/channel/UCfB_dBMG9TK2RlPsJdSXYSw?sub_confirmation=1";
   const customFontSize = ["sm", "md", "lg", "xl"];
   return (
     <>
-      <Headline type="h1">Youtube Stats</Headline>
+      <Heading as="h1">Youtube Stats</Heading>
       <Center fontSize={customFontSize}>
         <Grid
           alignItems="center"
