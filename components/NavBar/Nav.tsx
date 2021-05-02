@@ -5,13 +5,21 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 export default function Nav() {
   return (
     <>
-      <Box as="nav" className={style.transparentNav}>
+      <Box
+        as="nav"
+        borderBottom="1px solid #e2e2e2"
+        backgroundColor=" hsla(0, 0%, 100%, 0.6)"
+        position="fixed"
+        top="0"
+        left="0"
+        right="0"
+        p={3}
+        zIndex="500"
+      >
         <Flex
           flexDirection="row"
           alignItems="center"
           justifyContent="space-between"
-          pb={[2, 4]}
-          pt={[2, 4]}
           pr={2}
           pl={2}
           maxW="container.lg"
@@ -41,6 +49,8 @@ export default function Nav() {
             flexDirection="row"
             alignItems="center"
             justifyContent="space-between"
+            color="#1984ea"
+            textDecoration="none"
           >
             <> Project Request</>
             <MdKeyboardArrowRight />

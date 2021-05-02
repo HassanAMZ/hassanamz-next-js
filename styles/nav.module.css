@@ -7,12 +7,3 @@
 .linkStyles:hover {
   text-decoration: none !important;
 }
-.transparentNav {
-  border-bottom: 1px solid #e2e2e2;
-  backdrop-filter: blur(10px);
-  background-color: hsla(0, 0%, 100%, 0.6);
-}
-.projectRequest {
-  color: #1984ea !important;
-  text-decoration: none !important;
-}

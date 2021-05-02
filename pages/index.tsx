@@ -1,4 +1,4 @@
-import { Flex, Box, Heading, Text } from "@chakra-ui/react";
+import { Flex, Grid, Box, Heading, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
 export default function Home() {
@@ -9,49 +9,66 @@ export default function Home() {
         <title>Shahzada Ali Hassan - React Js & GTM Expert</title>
       </Head>
 
-      <Flex
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="space-between"
+      <Grid
+        templateColumns={["1fr", "275px 2fr"]}
         maxW="container.lg"
         margin="auto"
-        pb={[4]}
-        pt={[4]}
-        pr={2}
-        pl={2}
         as="main"
+        mt={"50px"}
       >
-        <Box
-          maxW={["30vh", "30vh", "25vh"]}
-          borderWidth="1px"
-          borderRadius="lg"
-          overflow="hidden"
-    
+        <Flex
+          alignItems={["center", "center", "flex-end"]}
+          justifyContent="center"
+          m={4}
         >
           <Image
-            height={681}
-            width={366}
+            height={1000}
+            width={1000}
             src="/Images/profileImage001.png"
             alt="Picture of the author"
           />
-        </Box>
-        <Text textAlign="center" as="h2" fontWeight="bold" fontSize={fontSize}>
-          Shahzada Ali Hassan
-        </Text>
-        <Heading
-          textAlign="center"
-          as="h1"
-          mt={1}
-          mb={2}
-          fontSize={["2xl", "4xl", "6xl"]}
+        </Flex>
+        <Flex
+          flexDirection={["column"]}
+          alignItems={["center", "flex-start"]}
+          justifyContent="space-between"
+          maxW="container.lg"
+          margin="auto"
+          pr={2}
+          pl={2}
+          as="main"
+          mt={"50px"}
+          ml={4}
         >
-          Next JS & GTM Expert
-        </Heading>
-        <Text textAlign="center" as="p" fontSize={fontSize} maxWidth={["lg"]}>
-          Web Design, Development & Analytics for companies that want to grow
-          their business with a great website.
-        </Text>
-      </Flex>
+          <Text
+            textAlign={["center", "left"]}
+            as="h2"
+            pt={[4]}
+            fontWeight="bold"
+            fontSize={fontSize}
+          >
+            Shahzada Ali Hassan
+          </Text>
+          <Heading
+            textAlign={["center", "left"]}
+            as="h1"
+            pt={2}
+            fontSize={["3xl", "4xl", "6xl"]}
+          >
+            Next JS & GTM Expert
+          </Heading>
+          <Text
+            textAlign={["center", "left"]}
+            as="p"
+            pt={2}
+            fontSize={fontSize}
+            maxWidth={["lg"]}
+          >
+            Web Design, Development & Analytics for companies that want to grow
+            their business with a great website.
+          </Text>
+        </Flex>
+      </Grid>
     </>
   );
 }
