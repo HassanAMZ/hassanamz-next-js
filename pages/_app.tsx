@@ -1,4 +1,4 @@
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, Box } from "@chakra-ui/react";
 import "../styles/global.css";
 import GoogleTagManager from "../components/Google Tag Manager/GoogleTagManager";
 import Nav from "../components/NavBar/Nav";
@@ -10,7 +10,9 @@ function MyApp({ Component, pageProps }) {
       <GoogleTagManager>
         <ChakraProvider theme={Theme}>
           <Nav />
-          <Component {...pageProps} />
+          <Box maxW="container.lg" margin="auto" mt={"50px"}>
+            <Component {...pageProps} />
+          </Box>
         </ChakraProvider>
       </GoogleTagManager>
     </>
