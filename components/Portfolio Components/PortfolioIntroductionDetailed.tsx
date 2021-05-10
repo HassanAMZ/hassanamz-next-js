@@ -1,8 +1,13 @@
 import { Paragrapgh } from "../Index";
-
+import { Link } from "@chakra-ui/react";
 export default function PortfolioIntroductionDetailed() {
   return (
     <>
+      <Paragrapgh type="p">
+        Hey, I'm a developer, writer and creator. I work at Upwork as a
+        Developer and Web Analytics. You have found my personal webiste, share
+        your word on our <Link href="/">hope wall</Link>.
+      </Paragrapgh>
       <br />
       <Paragrapgh type="p">
         I have worked on 100+ websites and stores across the globe and helped
