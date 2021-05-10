@@ -10,9 +10,7 @@ function MyApp({ Component, pageProps }) {
       <GoogleTagManager>
         <ChakraProvider theme={Theme}>
           <Nav />
-          <Box maxW="container.lg" margin="auto" p={4} mt={"50px"}>
-            <Component {...pageProps} />
-          </Box>
+          <Component {...pageProps} />
         </ChakraProvider>
       </GoogleTagManager>
     </>
