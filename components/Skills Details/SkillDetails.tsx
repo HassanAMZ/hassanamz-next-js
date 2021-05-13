@@ -1,12 +1,12 @@
-import { Heading, Text, GridItem } from "@chakra-ui/react";
+import { Heading, Text, Box } from "@chakra-ui/react";
 
-const SkillDetails = ({ title, description }) => {
+const SkillDetails = ({ title, description, subTitle }) => {
   return (
     <>
-      <GridItem p={4} bg="white" borderRadius="20px">
-        <Heading m={2}>{title}</Heading>
-        <Text m={2}>{description}</Text>
-      </GridItem>
+      <Heading m={2}>{title}</Heading>
+      <Heading m={2}>{subTitle}</Heading>
+
+      <Text m={2}>{description}</Text>
     </>
   );
 };
