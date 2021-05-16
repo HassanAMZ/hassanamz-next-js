@@ -1,9 +1,13 @@
-import { Flex, Grid, Box, Heading, GridItem, Text } from "@chakra-ui/react";
-import Paragrapgh from "../Typography/Paragrapgh";
-import { ProjectRequestButton } from "../Index";
+import { Grid, Box, Heading, GridItem, Text } from "@chakra-ui/react";
+import {
+  fontSizeTitle,
+  fontSizeHeading,
+  fontSizeParagrapgh,
+  ProjectRequestButton,
+} from "@/components/Index";
+
 import Image from "next/image";
 export default function PortfolioIntroductionSummary() {
-  const fontSize = ["md", "lg", "xl"];
   return (
     <>
       <Grid
@@ -28,29 +32,25 @@ export default function PortfolioIntroductionSummary() {
           <Text
             textAlign={["center", "center", "left"]}
             as="h2"
-            mt={[4]}
-            fontWeight="bold"
-            fontSize={fontSize}
+            fontSize={fontSizeHeading}
           >
             Shahzada Ali Hassan
           </Text>
           <Heading
             textAlign={["center", "center", "left"]}
             as="h1"
-            mt={2}
-            fontSize={["3xl", "4xl", "6xl"]}
+            fontSize={fontSizeTitle}
           >
-            Next JS & GTM Expert
+            Web & Server Analyst
           </Heading>
           <Text
             textAlign={["center", "center", "left"]}
             as="p"
-            mt={2}
-            mb={4}
-            fontSize={fontSize}
+            fontSize={fontSizeParagrapgh}
           >
-            Web Design, Development & Analytics for companies that want to grow
-            their business with a great website.
+            Plan, develop and manage web tracking for Facebook, Google,
+            Pinterest, HotJar and other analytics using Google Tag Manager Web
+            and Server Containers.
           </Text>
           <Grid placeContent={["center", "center", "start"]}>
             <ProjectRequestButton variant="outline" size="md" />
