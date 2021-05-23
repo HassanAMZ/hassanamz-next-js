@@ -7,7 +7,8 @@ import {
   paddingSpacing,
 } from "@/components/Index";
 import Head from "next/head";
-export default function UpworkProfile() {
+import { motion } from "framer-motion";
+const UpworkProfile = () => {
   return (
     <>
       <Head>
@@ -82,7 +83,7 @@ export default function UpworkProfile() {
             respect, understanding all situations, and genuinely wanting to
             IMPROVE my Client's situations. 🎯I am new to Upwork, I won't
             hesitate to go above and beyond in providing the best services to
-            you and make your website completely effective with Google. <br />{" "}
+            you and make your website completely effective with Google. <br />
             <br />
             💌Message Us Now & Get a 100% Satisfaction <br /> <br /> Hassan
           </Text>
@@ -102,7 +103,7 @@ export default function UpworkProfile() {
             Google analytics
             <br /> Google tag manager
           </Text>
-        </Box>{" "}
+        </Box>
         <Box p={paddingSpacing}>
           <Heading textAlign={["left"]} as="h2" fontSize={fontSizeHeading}>
             Hourly Rate
@@ -114,4 +115,5 @@ export default function UpworkProfile() {
       </Container>
     </>
   );
-}
+};
+export default UpworkProfile;

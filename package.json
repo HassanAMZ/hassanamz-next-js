@@ -15,7 +15,7 @@
     "@emotion/styled": "^11.1.5",
     "fontsource-inter": "^4.0.0",
     "formik": "^2.2.6",
-    "framer-motion": "^3.3.0",
+    "framer-motion": "^3.10.6",
     "fs": "0.0.1-security",
     "globby": "^11.0.3",
     "next": "10.0.5",
