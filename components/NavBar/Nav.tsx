@@ -37,8 +37,8 @@ export default function Nav() {
               About
             </Link>
 
-            <Link className={style.linkStyles} href="working">
-              Testing
+            <Link className={style.linkStyles} href="/Upwork/UpworkProfile">
+              Upwork
             </Link>
           </Flex>
 

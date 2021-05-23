@@ -3,5 +3,12 @@ import {
   fontSizeHeading,
   fontSizeParagrapgh,
   fontSizeTitle,
+  paddingSpacing,
 } from "./FontSizes";
-export { Paragrapgh, fontSizeHeading, fontSizeParagrapgh, fontSizeTitle };
+export {
+  Paragrapgh,
+  fontSizeHeading,
+  paddingSpacing,
+  fontSizeParagrapgh,
+  fontSizeTitle,
+};

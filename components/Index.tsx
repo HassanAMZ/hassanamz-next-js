@@ -7,6 +7,7 @@ import {
   fontSizeHeading,
   fontSizeParagrapgh,
   fontSizeTitle,
+  paddingSpacing,
 } from "./Typography/Index";
 
 export {
@@ -18,6 +19,7 @@ export {
   ProjectRequestButton,
   SkillsGrid,
   fontSizeHeading,
-  fontSizeTitle,
   fontSizeParagrapgh,
+  fontSizeTitle,
+  paddingSpacing,
 };

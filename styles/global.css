@@ -11,6 +11,6 @@
   --accent-text-color: var(--green);
 }
 ::selection {
-  color: var(--main-text-color);
-  background: var(--accent-text-color);
+  color: var(--main-bg-color);
+  background: var(--main-text-color);
 }
