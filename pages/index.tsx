@@ -2,12 +2,15 @@ import { SkillsGrid } from "@/components/Index";
 import PortfolioIntroductionSummary from "@/components/Portfolio Components/PortfolioIntroductionSummary";
 import { Container, Box } from "@chakra-ui/react";
 import Head from "next/head";
-export default function Home() {
+import { motion } from "framer-motion";
+
+const Index = (props) => {
   return (
     <>
       <Head>
         <title>Shahzada Ali Hassan - React Js & GTM Expert</title>
       </Head>
+
       <Container maxW="container.lg" p={4} mt={"50px"}>
         <PortfolioIntroductionSummary />
       </Container>
@@ -18,4 +21,5 @@ export default function Home() {
       </Box>
     </>
   );
-}
+};
+export default Index;

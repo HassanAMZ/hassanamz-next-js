@@ -1,5 +1,6 @@
 import { Heading, Text, GridItem } from "@chakra-ui/react";
 import { fontSizeHeading, fontSizeParagrapgh } from "@/components/Index";
+
 const SkillDetails = ({
   title,
   description,

@@ -13,12 +13,11 @@ const UpworkProfile = () => {
     <>
       <Head>
         <title>
-          Upwork Profile || Shahzada Ali Hassan - React Js & GTM Expert
+          Upwork Profile - Shahzada Ali Hassan - React Js & GTM Expert
         </title>
       </Head>
 
       <Container maxW="container.lg" mt={"50px"} p={4}>
-        mot
         <Box p={paddingSpacing}>
           <Heading textAlign={["center"]} as="h1" fontSize={fontSizeTitle}>
             Upwrk Profile Approval Samples
